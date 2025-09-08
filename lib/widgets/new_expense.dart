@@ -46,7 +46,10 @@ class _NewExpenseState extends State<NewExpense> {
           Row(
             children: [
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  // Removes overlay from screen
+                  Navigator.pop(context);
+                },
                 child: const Text('Cancel'),
               ),
               ElevatedButton(
